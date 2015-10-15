@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery-ui.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body onload="init()">
+    <div id="sketchpadapp">
+<!--         <div class="leftside">
+             Touchscreen and mouse support HTML5 canvas sketchpad.<br/><br/>
+             Draw something by tapping or dragging.<br/><br/>
+             Works on iOS, Android and desktop/laptop touchscreens using Chrome/Firefox/Safari.<br/><br/>
+             <input type="submit" value="Clear Sketchpad" id="clearbutton" onclick="clearCanvas(canvas,ctx);">
+        </div> -->
+        <div class="rightside">
+            <canvas id="sketchpad" height="300" width="700">
+            </canvas>
+        </div>
+    </div>
+    <br style="clear:both">
+        <div id="pbar_outerdiv" style="width: 700px; height: 20px; border: 1px solid grey; z-index: 1; position: relative; border-radius: 5px; -moz-border-radius: 5px; margin-left:10px;">
+<div id="pbar_innerdiv" style="background-color: gray; z-index: 2; height: 100%; width: 0%;"></div>
+
+    <br style="clear:both">
+    <div id="gif"></div>
+          <a href="index.html"><H1>lower</H1></a>
+  <H1>Straight Lines</H1>
+<img onclick="show_gif('I');" height="50px" style="float-left: true" src="images/I.gif">
+  <img onclick="show_gif('L');" height="50px" style="float-left: true"  src="images/L.gif">
+  <img onclick="show_gif('T');"  height="50px" style="float-left: true" src="images/T.gif">
+          <img onclick="show_gif('F');"  height="50px" style="float-left: true" src="images/F.gif">
+  <img onclick="show_gif('H');"  height="50px" style="float-left: true" src="images/H.gif">
+  <img onclick="show_gif('E');"  height="50px" style="float-left: true" src="images/E.gif">
+  <H1>Angled Lines</H1>
+  <img onclick="show_gif('X');" height="50px" style="float-left: true"  src="images/X.gif">
+  <img onclick="show_gif('V');" height="50px" style="float-left: true"  src="images/V.gif">
+  <img onclick="show_gif('W');" height="50px" style="float-left: true"  src="images/W.gif">
+  <H1>Straight and Angled Lines</H1>
+  <img onclick="show_gif('Z');" height="50px" style="float-left: true"  src="images/Z.gif">
+  <img onclick="show_gif('K');" height="50px" style="float-left: true"  src="images/K.gif">
+  <img onclick="show_gif('Y');" height="50px" style="float-left: true"  src="images/Y.gif">
+  <img onclick="show_gif('M');" height="50px" style="float-left: true"  src="images/M.gif">
+  <img onclick="show_gif('A');" height="50px" style="float-left: true"  src="images/A.gif">
+  <H1>Side Curves</H1>
+  <img onclick="show_gif('D');" height="50px" style="float-left: true"  src="images/D.gif">
+  <img onclick="show_gif('P');" height="50px" style="float-left: true"  src="images/P.gif">
+  <img onclick="show_gif('B');" height="50px" style="float-left: true"  src="images/B.gif">
+  <img onclick="show_gif('R');" height="50px" style="float-left: true"  src="images/R.gif">
+  <H1>Circles</H1>
+  <img onclick="show_gif('O');" height="50px" style="float-left: true"  src="images/O.gif">
+  <img onclick="show_gif('C');" height="50px" style="float-left: true"  src="images/C.gif">
+  <img onclick="show_gif('G');" height="50px" style="float-left: true"  src="images/G.gif">
+  <img onclick="show_gif('Q');" height="50px" style="float-left: true"  src="images/Q.gif">
+  <H1>Bottom Curves</H1>
+  <img onclick="show_gif('J');" height="50px" style="float-left: true"  src="images/J.gif">
+  <img onclick="show_gif('U');" height="50px" style="float-left: true"  src="images/U.gif">
+  <H1>All Curves</H1>
+  <img onclick="show_gif('S');" height="50px" style="float-left: true"  src="images/S.gif">
+  <H1>Numbers</H1>
+  <img onclick="show_gif('0');" height="50px" style="float-left: true"  src="images/0.gif">
+  <img onclick="show_gif('1');" height="50px" style="float-left: true"  src="images/1.gif">
+  <img onclick="show_gif('2');" height="50px" style="float-left: true"  src="images/2.gif">
+  <img onclick="show_gif('3');" height="50px" style="float-left: true"  src="images/3.gif">
+  <img onclick="show_gif('4');" height="50px" style="float-left: true"  src="images/4.gif">
+  <img onclick="show_gif('5');" height="50px" style="float-left: true"  src="images/5.gif">
+  <img onclick="show_gif('6');" height="50px" style="float-left: true"  src="images/6.gif">
+  <img onclick="show_gif('7');" height="50px" style="float-left: true"  src="images/7.gif">
+  <img onclick="show_gif('8');" height="50px" style="float-left: true"  src="images/8.gif">
+  <img onclick="show_gif('9');" height="50px" style="float-left: true"  src="images/9.gif">
+  </body>
+</html>
